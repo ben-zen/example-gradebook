@@ -12,6 +12,19 @@
 public class Grade {
   public static void main (String[] args) {
     int midtermGrade, finalGrade;
+    int[] assignmentGrades = new int[10];
+    // assignmentGrades: [ ][ ][ ][ ]
+    assignmentGrades[0] = 9;
+    // assignment 2 wasn't handed in
+    assignmentGrades[2] = 8;
+    assignmentGrades[3] = 10;
+    assignmentGrades[4] = 9;
+    assignmentGrades[5] = 10;
+    assignmentGrades[6] = 7;
+    assignmentGrades[7] = 8;
+    assignmentGrades[8] = 9;
+    // assignment 10 wasn't handed in
+
     midtermGrade = 61;
     finalGrade = 70;
     double courseGrade = ((double) (midtermGrade + finalGrade)) / 2; // (61 + 70) -> 131; 131 / 2 = 65.5
@@ -21,5 +34,9 @@ public class Grade {
     } else {
       System.out.println("Unsatisfactory");
     }
+  }
+  
+  public static double computeGrade (int[] aG, int mG, int fG) {
+    
   }
 }
