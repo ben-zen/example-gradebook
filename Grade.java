@@ -10,15 +10,15 @@
  */
 
 public class Grade {
-    public static void main (String[] args) {
-	int midtermGrade, finalGrade;
-	midtermGrade = 60;
-	finalGrade = 70;
-	courseGrade = (midtermGrade + finalGrade) / 200;
-	if (courseGrade >= 50) {
-	    System.out.println("Satisfactory");
-	} else {
-	    System.out.println("Unsatisfactory");
-	}
+  public static void main (String[] args) {
+    int midtermGrade, finalGrade;
+    midtermGrade = 60;
+    finalGrade = 70;
+    int courseGrade = (midtermGrade + finalGrade) / 2;
+    if (courseGrade >= 50) {
+      System.out.println("Satisfactory");
+    } else {
+      System.out.println("Unsatisfactory");
     }
+  }
 }
