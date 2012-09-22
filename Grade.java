@@ -37,6 +37,7 @@ public class Grade {
   }
   
   public static double computeGrade (int pG, int mG, int fG) {
-    
+  double courseGrade = .5*fG + .3*mG + .2*pG;
+  return courseGrade;
   }
 }
