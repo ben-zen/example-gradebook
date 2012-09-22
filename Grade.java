@@ -12,10 +12,11 @@
 public class Grade {
   public static void main (String[] args) {
     int midtermGrade, finalGrade;
-    midtermGrade = 60;
+    midtermGrade = 61;
     finalGrade = 70;
-    int courseGrade = (midtermGrade + finalGrade) / 2;
-    if (courseGrade >= 50) {
+    double courseGrade = ((double) (midtermGrade + finalGrade)) / 2; // (61 + 70) -> 131; 131 / 2 = 65.5
+    boolean satisfactoryGrade = (courseGrade >= 50);
+    if (satisfactoryGrade) {
       System.out.println("Satisfactory");
     } else {
       System.out.println("Unsatisfactory");
