@@ -36,7 +36,7 @@ public class Grade {
     }
   }
   
-  public static double computeGrade (int[] aG, int mG, int fG) {
+  public static double computeGrade (int pG, int mG, int fG) {
     
   }
 }
