@@ -11,7 +11,7 @@
 
 public class Grade {
   public static void main (String[] args) {
-    int midtermGrade, finalGrade;
+    int projectGrade, midtermGrade, finalGrade;
     int[] assignmentGrades = new int[10];
     // assignmentGrades: [ ][ ][ ][ ]
     assignmentGrades[0] = 9;
@@ -24,10 +24,10 @@ public class Grade {
     assignmentGrades[7] = 8;
     assignmentGrades[8] = 9;
     // assignment 10 wasn't handed in
-
+    projectGrade = 90;
     midtermGrade = 61;
     finalGrade = 70;
-    double courseGrade = ((double) (midtermGrade + finalGrade)) / 2; // (61 + 70) -> 131; 131 / 2 = 65.5
+    double courseGrade = computeGrade (projectGrade, midtermGrade, finalGrade);
     boolean satisfactoryGrade = (courseGrade >= 50);
     if (satisfactoryGrade) {
       System.out.println("Satisfactory");
@@ -37,7 +37,7 @@ public class Grade {
   }
   
   public static double computeGrade (int pG, int mG, int fG) {
-  double courseGrade = .5*fG + .3*mG + .2*pG;
-  return courseGrade;
+    double courseGrade = .5*fG + .3*mG + .2*pG;
+    return courseGrade;
   }
 }
